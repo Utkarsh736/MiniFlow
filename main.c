@@ -17,7 +17,7 @@ int main() {
     }
     printf("\n");
 
-    // View the tesnor (reshape to same size)
+    // View the tensor (reshape to same size)
     Tensor* new_tensor = view_tensor(tensor, 5);
 
     // Display new tensor
