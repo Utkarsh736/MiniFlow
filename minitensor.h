@@ -12,5 +12,5 @@ Tensor* create_tensor(size_t size); // Declaration
 Tensor* view_tensor(Tensor* tensor, size_t new_size); // Declaration
 void free_tensor(Tensor* tensor); // Declaration
 
-#endif // STENSOR_H
+#endif // MINITENSOR_H
 

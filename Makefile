@@ -5,6 +5,7 @@ CC = gcc
 
 # Compiler flags
 CFLAGS = -I. -Wall
+CFLAGS += -I/home/utkar/MiniFlow
 
 # Source files
 SRCS = minitensor.c
