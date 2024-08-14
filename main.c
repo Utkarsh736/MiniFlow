@@ -19,6 +19,11 @@ int main() {
 
     // View the tensor (reshape to same size)
     Tensor* new_tensor = view_tensor(tensor, 5);
+    if (new_tensor == NULL) {
+        printf("Error: Failed to create new tensor. \n");
+        free_tensor(tensor);
+        return 1; // Exit with error
+    }
 
     // Display new tensor
     printf("New Tensor: ");

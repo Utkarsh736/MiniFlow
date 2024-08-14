@@ -24,6 +24,10 @@ Tensor* create_tensor(size_t size) {
 // Step 3: Implement the `.view` method
 
 Tensor* view_tensor(Tensor* tensor, size_t new_size) {
+    if (tensor == NULL){
+        printf("Error: Original tensor is NULL. \n");
+        return NULL;
+    }
     if (new_size != tensor->size) {
         printf("Error: New size must match the original size. \n");
         return NULL;
@@ -31,7 +35,7 @@ Tensor* view_tensor(Tensor* tensor, size_t new_size) {
 
     // Create a new tensor with the same data
     Tensor* new_tensor = create_tensor(new_size);
-    if (new_tensor == NULL) { // {{ edit_2 }}
+    if (new_tensor == NULL) { 
         printf("Error: Memory allocation failed.\n");
         return NULL;
     }

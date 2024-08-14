@@ -8,7 +8,7 @@ CFLAGS = -I. -Wall
 CFLAGS += -I/home/utkar/MiniFlow
 
 # Source files
-SRCS = minitensor.c
+SRCS = minitensor.c main.c
 
 # Output executable
 TARGET = miniflow
